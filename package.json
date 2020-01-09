@@ -1,38 +1,32 @@
 {
-  "name": "express-space-homework",
-  "version": "1.0.1",
+  "name": "hw13-mars-missions",
+  "version": "1.0.0",
   "description": "get your hands dirty learning about express mechanics, and implementing your own show and index routes and views",
   "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha --exit",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.generalassemb.ly:WebDev-Connected-Classroom/express-space-homework.git"
+    "url": "git@git.generalassemb.ly:sei-chi-dec-2019/hw13-mars-missions"
   },
   "keywords": [
     "express",
     "params",
-    "http-methods",
-    "following-directions",
+    "HTTP",
     "REST",
-    "index",
-    "show",
+    "MVC",
+    "following-directions",
     "mars",
+    "space",
     "NASA",
-    "space"
+    "index",
+    "show"
   ],
-  "author": "Matt Huntington, Thom Page, Reuben Ayres, Ryan Fleharty",
+  "author": "General Assembly Chicago",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.2.0",
-    "cheerio": "^1.0.0-rc.3",
-    "express": "^4.17.1",
-    "mocha": "^6.1.4",
-    "supertest": "^4.0.2"
+    "express": "^4.17.1"
   }
 }
