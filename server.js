@@ -28,8 +28,16 @@ const port = 3000;
 let marsMissions = require('./models/marsMissions.js')
 
 app.get('/missions', (req, res) => {
-  
+  res.render("index.ejs", {
+    missions: marsMissions
+  })
 })
+// missions showing up at /missions
+
+
+// app.get("/missions/:ind", (req, res) => {
+  
+// })
 
 
 // INDEX Route
