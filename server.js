@@ -48,8 +48,8 @@ app.get("/missions/:index", (req, res) => {
 
 
 // SHOW Route
-// send data to 'show.ejs' view -- done
-// the view should display all the data for a single mission
+// send data to 'show.ejs' view -- done!
+// the view should display all the data for a single mission -- done!
 
 
 // LISTENER
