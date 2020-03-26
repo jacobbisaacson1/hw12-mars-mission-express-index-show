@@ -5,11 +5,11 @@ const app = express();
 // PORT
 const port = 3000;
 
-// run `npm install` to install dependencies in package.json
+// run `npm install` to install dependencies in package.json -- done
 
 // * Your mission is to complete the app
-// * The app will need routes for index and show
-// * The app will need views for index and show
+// * The app will need routes for index and show --ok
+// * The app will need views for index and show --ok
 //
 // * MAIN GOALS:
 // * User should be able to click on a mission’s name on the index page, and be taken to that mission’s show page
@@ -19,48 +19,18 @@ const port = 3000;
 // * Bonus/Hungry for More: add static css to style the pages (google how)
 
 // NOTES:
-// ejs has not been installed
-// views folder has not been created
+// ejs has not been installed - done
+// views folder has not been created -- done
 
-// DATA - put into marsMissions.js file inside of a models folder, don't forget to module.exports it
-// remember to require it in the server
-const marsMissions = [
-  {
-    name: "Curiosity",
-    launchDate: "26 Nov 2011",
-    operator: "NASA",
-    missionType: "Rover",
-    img: ""
-  },
-  {
-    name: "Opportunity",
-    launchDate: "8 Jul 2003",
-    operator: "NASA",
-    missionType: "Rover",
-    img: ""
-  },
-  {
-    name: "Spirit",
-    launchDate: "10 Jun 2003",
-    operator: "NASA",
-    missionType: "Rover",
-    img: ""
-  },
-  {
-    name: "Sojourner",
-    launchDate: "4 Dec 1996",
-    operator: "NASA",
-    missionType: "Rover",
-    img: ""
-  },
-  {
-    name: "Rosetta",
-    launchDate: "2 Mar 2004",
-    operator: "ESA",
-    missionType: "Gravity Assist",
-    img: ""
-  }
-];
+// DATA - put into marsMissions.js file inside of a models folder, don't forget to module.exports it -- done
+// remember to require it in the server -- done
+
+let marsMissions = require('./models/marsMissions.js')
+
+app.get('/missions', (req, res) => {
+  
+})
+
 
 // INDEX Route
 // send data to 'index.ejs' view
